@@ -1,47 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
-.noto{
+.noto {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
 }
-.inter{
-    font-family: "Inter", sans-serif;
+.inter {
+  font-family: "Inter", sans-serif;
 }
-.home{
-    color: #252432;
-   font-weight: bold;
+.hide {
+  display: none;
 }
-.shop-about{
-    color: #8987A1;
+.home {
+  color: #252432;
+  font-weight: bold;
 }
-.cart{
-    color:#000000;
+.shop-about {
+  color: #8987a1;
+}
+.cart {
+  color: #000000;
 }
 
-
-.parent-nav{
-justify-content: space-between;
-margin-top: 10px;
-padding-left: 100px;
-padding-right: 100px;
+.parent-nav {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
-.display-flex{
+.display-flex {
+  display: flex;
+}
+nav > ul {
+  list-style: none;
+}
+.navmenu a {
+  text-decoration: none;
+}
+
+.navmenu {
+  gap: 48px;
+  font-size: 20px;
+}
+.navbar {
+  margin: 0px 20px;
+}
+
+@media (max-width: 576px) {
+  .home,
+  .shop-about {
+    display: none;
+  }
+
+  .parent-nav {
     display: flex;
-}
-nav > ul{
-list-style: none;
-}
-.navmenu a{
-    text-decoration: none;
-    
-}
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+  }
+  .logo {
+    width: 63px;
+    height: 38px;
+    padding-left: 18px;
+  }
 
-.navmenu{
-    gap: 48px;
-    font-size: 20px;
-    
-}
-.navmenu li i {
-  margin-right: 6px;
+  .cart {
+    font-size: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 18px;
+  }
 }
