@@ -65,8 +65,8 @@ nav > ul {
 
   .cart {
     font-size: 15px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: 18px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 18px;
   }
 }
